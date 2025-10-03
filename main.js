@@ -7,8 +7,8 @@ fetch('example.txt')
       return response.text();
     })
     .then(text => {
-      document.getElementById('output').textContent = text;
+      console.log(text);
     })
     .catch(error => {
-      document.getElementById('output').textContent = 'Error: ' + error;
+      console.log(error);
     });
